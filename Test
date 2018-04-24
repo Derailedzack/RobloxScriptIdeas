@@ -1,0 +1,3 @@
+script.Parent.MouseButton1Click:connect(function (t)
+	game.Players.LocalPlayer.Character.Torso.Transparency = math.random(tick())
+end)
