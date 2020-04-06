@@ -1,4 +1,6 @@
-script.Parent.MouseButton1Click:connect(function (t)
-	local p = instance.new("Sound")
-  p.soundid = "www.roblox.com/asset?=" ... math.random(tick())
-end)
+function onClick()
+	local p = Instance.new("Sound")
+  p.SoundId = ("www.roblox.com/asset?=%d"):format(math.random(tick()))
+end
+
+script.Parent.MouseButton1Click:connect(onClick)
